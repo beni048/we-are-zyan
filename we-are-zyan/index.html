@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Fair Fashion Tennis Apparel - Coming Soon</title>
+    <meta name="description" content="Premium fair fashion tennis apparel designed in Switzerland, produced in Europe. Crafted for movement, made to last. Coming soon.">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎾</text></svg>">
+    <style>
+        * {margin:0;padding:0;box-sizing:border-box;}
+        body,html {height:100%;overflow:hidden;}
+        .hero {height:100vh;width:100vw;background-image:url('assets/images/zyan_background.jpeg');background-position:center;background-repeat:no-repeat;background-size:cover;position:relative;}
+        .hero::before {content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.1);opacity:0;transition:opacity 0.3s;}
+        .contact-overlay {position:absolute;bottom:20px;right:20px;background:rgba(255,255,255,0.9);padding:15px 20px;border-radius:8px;font-family:'Arial',sans-serif;font-size:14px;color:#333;opacity:0;transform:translateY(20px);transition:all 0.3s;}
+        .hero:hover .contact-overlay {opacity:1;transform:translateY(0);}
+        .contact-overlay a {color:#333;text-decoration:none;font-weight:500;}
+        .contact-overlay a:hover {text-decoration:underline;}
+        @media(max-width:768px){.hero{background-size:cover;background-position:center;}.hero::before{opacity:0.2;}.contact-overlay{position:static;opacity:1;transform:none;margin:20px;background:rgba(255,255,255,0.95);}}
+        @media(max-width:768px) and (orientation:landscape){.hero{background-size:cover;}}
+    </style>
+</head>
+</html>
