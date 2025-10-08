@@ -5,18 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premium Fair Fashion Tennis Apparel - Coming Soon</title>
     <meta name="description" content="Premium fair fashion tennis apparel designed in Switzerland, produced in Europe. Crafted for movement, made to last. Coming soon.">
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎾</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        * {margin:0;padding:0;box-sizing:border-box;}
-        body,html {height:100%;overflow:hidden;}
-        .hero {height:100vh;width:100vw;background-image:url('assets/images/zyan_background.jpeg');background-position:center;background-repeat:no-repeat;background-size:cover;position:relative;}
-        .hero::before {content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.1);opacity:0;transition:opacity 0.3s;}
-        .contact-overlay {position:absolute;bottom:20px;right:20px;background:rgba(255,255,255,0.9);padding:15px 20px;border-radius:8px;font-family:'Arial',sans-serif;font-size:14px;color:#333;opacity:0;transform:translateY(20px);transition:all 0.3s;}
-        .hero:hover .contact-overlay {opacity:1;transform:translateY(0);}
-        .contact-overlay a {color:#333;text-decoration:none;font-weight:500;}
-        .contact-overlay a:hover {text-decoration:underline;}
-        @media(max-width:768px){.hero{background-size:cover;background-position:center;}.hero::before{opacity:0.2;}.contact-overlay{position:static;opacity:1;transform:none;margin:20px;background:rgba(255,255,255,0.95);}}
-        @media(max-width:768px) and (orientation:landscape){.hero{background-size:cover;}}
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            min-height: 100vh;
+            min-width: 100vw;
+            background: url('assets/images/zyan_background.jpeg') center center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-content {
+            width: 100%;
+            max-width: 730px;
+            margin: 0 auto;
+            text-align: center;
+            color: #e7dfcc;
+            font-family: 'Libre Baskerville', serif;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.57);
+            padding: 16px;
+        }
+        .headline {
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 1.12;
+            margin-bottom: 44px;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+        }
+        .desc-section {
+            font-size: 1.3rem;
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+        .desc-section2 {
+            font-size: 1.3rem;
+            margin-bottom: 44px;
+            font-weight: 400;
+        }
+        .coming-soon {
+            font-size: 2.4rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        @media (max-width: 680px) {
+            .main-content {
+                padding: 5vw;
+            }
+            .headline {
+                font-size: 1.5rem;
+                margin-bottom: 22px;
+                letter-spacing: 1.5px;
+            }
+            .desc-section, .desc-section2 {
+                font-size: 1rem;
+                margin-bottom: 16px;
+            }
+            .coming-soon {
+                font-size: 1.35rem;
+            }
+        }
     </style>
 </head>
+<body>
+    <div class="main-content">
+        <div class="headline">
+            Premium Fair<br>
+            Fashion Tennis<br>
+            Apparel
+        </div>
+        <div class="desc-section">
+            Designed in Switzerland &ndash; <br>Produced in Europe
+        </div>
+        <div class="desc-section2">
+            Crafted for movement.<br>
+            Made to last.
+        </div>
+        <div class="coming-soon">Coming soon</div>
+    </div>
+</body>
 </html>
